@@ -45,7 +45,6 @@ public class Point {
      * @return true or false.
      */
     public boolean is(int a, int b) {
-        y = (x * a + b);
         return this.y == this.x * a + b;
     }
 }

@@ -8,16 +8,27 @@ package ru.job4j.max;
  */
 public class Max {
     /**
-     * 2 fields.
+     * 3 fields.
      */
-    private int first, second; //numbers as parameters
+    private int first, second, third;
     /**
-     * search max method.
+     * search max of 2 method.
      * @param first is a number.
      * @param second is a number.
      * @return max of 2 numbers.
      */
     public int max(int first, int second) {
         return (first > second) ? first : second;
+    }
+    /**
+     * search max of 3 method.
+     * @param first is a number.
+     * @param second is a number.
+     * @param third is a number.
+     * @return max of 3 numbers.
+     */
+    public int max(int first, int second, int third) {
+        int a = max(first, second);
+        return max(a, third);
     }
 }
