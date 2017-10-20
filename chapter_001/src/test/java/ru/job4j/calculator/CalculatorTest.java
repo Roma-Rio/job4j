@@ -27,6 +27,7 @@ public class CalculatorTest {
     /**
      * Test sub method.
      */
+    @Test
     public void whenSubThreeMinusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.sub(3D, 1D);
@@ -37,9 +38,10 @@ public class CalculatorTest {
     /**
      * Test div method.
      */
-    public void whenDivOnePlusOneThenTwo() {
+    @Test
+    public void whenDivSixforTwoThenThree() {
         Calculator calc = new Calculator();
-        calc.add(6D, 2D);
+        calc.div(6D, 2D);
         double result = calc.getResultDiv();
         double expected = 3D;
         assertThat(result, is(expected));
@@ -47,9 +49,10 @@ public class CalculatorTest {
     /**
      * Test mult method.
      */
+    @Test
     public void whenMultTwoofTwoThenFour() {
         Calculator calc = new Calculator();
-        calc.add(2D, 2D);
+        calc.mult(2D, 2D);
         double result = calc.getResultMult();
         double expected = 4D;
         assertThat(result, is(expected));
