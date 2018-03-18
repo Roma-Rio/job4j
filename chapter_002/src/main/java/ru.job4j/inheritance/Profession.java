@@ -49,7 +49,6 @@ public class Profession {
         int volume;
         String district;
     }
-
     class Pupil {
         int age;
         String hobby;
