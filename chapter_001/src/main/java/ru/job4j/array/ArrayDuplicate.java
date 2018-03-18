@@ -2,20 +2,16 @@ package ru.job4j.array;
 
 import java.util.Arrays;
 /**
- * Bubblesort of an array.
+ * Remove duplicate of an array.
  * @author Ramil' Gilyazev.
- * @version task 5.1.
- * @since 12.11.2017.
+ * @version task 5.3.
+ * @since 24.11.2017.
  */
 public class ArrayDuplicate {
     /**
-     * 1 field-array of int.
-     */
-    private String[] str;
-    /**
-     * Bubblesort method.
+     * Remove duplicate method.
      * @param str-array of string.
-     * @return sorted array .
+     * @return removed array .
      */
     public String[] remove(String[] str) {
         int dlm = str.length;

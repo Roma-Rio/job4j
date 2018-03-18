@@ -12,7 +12,7 @@ import static org.junit.Assert.assertThat;
  *
  * @author Ramil' Gilyazev.
  * @version task 5.3.
- * @since 21.11.2017.
+ * @since 24.11.2017.
  */
 
 public class ArrayDuplicateTest {
@@ -22,7 +22,7 @@ public class ArrayDuplicateTest {
         @Test
         public void whenRemoveDuplicatesThenArrayWithoutDuplicate() {
             ArrayDuplicate arr1 = new ArrayDuplicate();
-            String[] arr = {"Java", "method", "OOP", "FOR", "WHILE", "DO", "ASSERT", "OOP", "ASSERT", "Java"};
+            String[] arr = {"Java", "method", "OOP", "FOR", "WHILE", "DO", "ASSERT", "OOP", "Java", "ASSERT"};
             String[] resultArray = arr1.remove(arr);
             String[] expectArray = {"Java", "method", "OOP", "FOR", "WHILE", "DO", "ASSERT"};
             assertThat(resultArray, is(expectArray));

@@ -22,7 +22,7 @@ public class BoardTest {
         final String line = System.getProperty("line.separator");
         String expected = String.format("x x%s x %sx x%s", line, line, line);
         assertThat(res1, is(expected));
-    };
+    }
     /**
      * 5x4 board test method.
      */

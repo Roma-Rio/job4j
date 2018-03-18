@@ -15,7 +15,7 @@ public class SubstringInString {
      * @param origin,sub are strings.
      * @return true\false.
      */
-    public boolean contains(String origin, String sub) {
+    public Boolean contains(String origin, String sub) {
         char[] orig = origin.toCharArray();
         char[] subs = sub.toCharArray();
         int orl = orig.length;
@@ -23,14 +23,11 @@ public class SubstringInString {
         int count = 0;
         for (int i = 0; i < orl; i++) {
             for (int j = i; j < sl;) {
-                if (orig[i] == (subs[j]) && (count >= 2))  {
+                if (orig[i] == (subs[j]) ) {
                     count++;
-                     return true;
-                    } else {
-                        return false;
-                    }
                 }
             }
-        return contains("sdfsvjkn", "");
-    }
+
+        }if (count == sl)
+            return true;
 }
